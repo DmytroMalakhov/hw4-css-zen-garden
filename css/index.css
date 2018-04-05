@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/****************************main css****************************/
+
+
+body {
+	max-width: 920px;
+	margin: auto;
+	background-image: url(../img/bg.jpg);
+	background-position: center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+	color: #000;
+	font-family: 'Playfair Display', serif;
+	line-height: 1.5;
+}
+#zen-intro {
+	background-color: rgb(240, 244, 195);
+	border: 1px solid black;
+	box-sizing: border-box;
+	padding: 0 15px;
+	display: grid;
+	grid-template: 0.7fr 1fr / repeat(2, 1fr);
+}
+
+#zen-intro header {
+	background-color: rgb(205, 220, 57);
+	text-align: center;
+    margin: 0px -15px;
+	grid-column: 1 / 3;
+	color: #F0F4C3;
+}
+
+#zen-intro header h1 {
+	font-size: 4.8rem;
+	font-weight: bold;
+	margin: auto 0;
+    padding: 5% 0;
+}
+
+#zen-intro header h1::before {
+	content: "*"
+}
+
+#zen-intro header h1::after {
+	content: " - Grid*"
+}
+
+#zen-intro header h2 {
+	font-size: 40px;
+	margin: auto 0;
+}
+
+#zen-summary  {
+    padding-top: 57px;
+}
+
+#zen-summary a,
+#zen-participation a,
+#zen-requirements a,
+.sidebar a {
+	color: #ff9800;
+	text-decoration: none;
+}
+
+#zen-summary a::before {
+	content: url(../img/icon-download.png)" ";
+}
+
+#zen-summary a:hover,
+#zen-participation a:hover,
+#zen-requirements a:hover,
+.sidebar a:hover {
+	color: #fcbc5d;
+	text-decoration: underline;
+}
+
+#zen-summary a:active,
+#zen-participation a:active,
+#zen-requirements a:active,
+.sidebar a:active {
+	color: #ce7b00;
+}
+
+#zen-summary p {
+	padding-right: 15px;
+	padding-bottom: 20px;
+	text-align: justify;
+	font-size: 20px;
+}
+
+#zen-preamble {
+	
+}
+
+#zen-preamble h3 {
+	font-size: 25px;
+	font-weight: bold;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+#zen-preamble p {
+	padding-left: 15px;
+	padding-bottom: 20px;
+	text-align: justify;
+	font-size: 20px;
+}
+
+#zen-supporting {
+
+}
+
+#zen-explanation {
+    background-color: rgb(240, 244, 195);
+    padding: 30px 15px;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+    box-sizing: border-box;
+    display: grid;
+    grid-template: 0.3fr 1fr / repeat(2, 1fr);
+}
+
+#zen-explanation h3 {
+	font-size: 25px;
+	font-weight: bold;
+	padding-bottom: 20px;
+	text-align: center;
+	margin: auto 0;
+}
+#zen-explanation p {
+	padding-bottom: 20px;
+	text-align: justify;
+	font-size: 20px;
+}
+
+#zen-participation {
+    background-color: rgb(240, 244, 195);
+    padding: 30px 15px;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+    box-sizing: border-box;
+    display: grid;
+    grid-template: 0.9fr 0.6fr 1fr/ repeat(4, 1fr);
+}
+
+#zen-participation h3 {
+	font-size: 25px;
+	font-weight: bold;
+	padding-bottom: 20px;
+	text-align: center;
+	grid-column: 3 / 5;
+	grid-row: 1; 
+    margin: auto 0;
+}
+
+#zen-participation p {
+	text-align: justify;
+	font-size: 20px;
+}
+
+#zen-participation p:nth-child(2) {
+	grid-column: 1 / 3;
+	grid-row: 1;
+}
+#zen-participation p:nth-child(3) {
+	grid-column: 3 / 5;
+	grid-row: 2;
+}
+
+#zen-participation p:nth-child(4) {
+	grid-column: 1 / 3;
+	grid-row: 3;
+}
+
+#zen-benefits {
+    background-color: rgb(240, 244, 195);
+    padding: 30px 15px;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#zen-benefits h3 {
+	font-size: 25px;
+	font-weight: bold;
+	padding-bottom: 20px;
+	text-align: center;
+    margin: auto 0;
+    grid-column: 1 / 2;
+}
+
+#zen-benefits p {
+	text-align: justify;
+	font-size: 20px;
+	grid-column: 2 / 3; 
+}
+
+#zen-requirements {
+    background-color: rgb(240, 244, 195);
+    padding: 30px 15px;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+    box-sizing: border-box;
+    display: grid;
+    grid-template: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr / repeat(4, 1fr);
+}
+
+#zen-requirements h3 {
+	font-size: 25px;
+	font-weight: bold;
+	padding-bottom: 20px;
+	text-align: center;
+    margin: auto 0;
+    grid-column: 3 / 5;
+    grid-row: 1;
+}
+
+#zen-requirements p {
+	padding-bottom: 20px;
+	text-align: justify;
+	font-size: 20px;
+}
+
+#zen-requirements p:nth-child(2) {
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+
+#zen-requirements p:nth-child(3) {
+    grid-column: 3 / 5;
+    grid-row: 2;
+}
+
+#zen-requirements p:nth-child(4) {
+    grid-column: 1 / 3;
+    grid-row: 3;
+}
+
+#zen-requirements p:nth-child(5) {
+    grid-column: 3 / 5;
+    grid-row: 4;
+}
+
+#zen-requirements p:nth-child(6) {
+    grid-column: 1 / 3;
+    grid-row: 5;
+}
+
+footer {
+	background-color: #BDBDBD;
+	font-size: 25px;
+	font-weight: bold;
+	text-align: center;
+    margin: auto 0;
+    height: 50px;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+}
+
+footer a {
+	color: #fff;
+	text-decoration: none;
+	background: #BDBDBD;
+	padding: 0px 15px;
+	border-radius: 3px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	vertical-align: sub;
+}
+
+footer a:hover{
+	 background: #CDDC39;
+}
+
+footer a:active {
+	background: #AFB42B;
+}
+
+.sidebar {
+	background-color: rgb(79, 82, 86);
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+}
+
+#design-selection {
+	background-color: #757575;
+	color: #000;
+	display: grid;
+	grid-template: 1fr / repeat(4, 1fr);
+}
+
+#design-selection h3 {
+	font-size: 25px;
+	font-weight: bold;
+	text-align: center;
+    margin: auto 0;
+    color: #CDDC39;
+	grid-column: 1 / 2;
+    grid-row: 1; 
+}
+
+#design-selection nav {
+	grid-column: 2 / 4;
+    grid-row: 1;
+}
+
+#design-archives {
+	background-color: #757575;
+	color: #000;
+	display: grid;
+	grid-template: 1fr / repeat(4, 1fr);
+}
+
+#design-archives h3 {
+	font-size: 25px;
+	font-weight: bold;
+	text-align: center;
+    margin: auto 0;
+    color: #CDDC39;
+	grid-column: 2 / 3;
+    grid-row: 1; 
+}
+
+#design-archives nav {
+	grid-column: 3 / 5;
+    grid-row: 1;
+}
+
+#zen-resources {
+	background-color: #757575;
+	color: #000;
+	display: grid;
+	grid-template: 1fr / repeat(4, 1fr);
+}
+
+#zen-resources h3 {
+	font-size: 25px;
+	font-weight: bold;
+	text-align: center;
+    margin: auto 0;
+    color: #CDDC39;	
+	grid-column: 3 / 4;
+    grid-row: 1; 
+}
+
+#zen-resources ul {
+	grid-column: 4 / 5;
+    grid-row: 1;
+}
